@@ -71,7 +71,7 @@ int main()
     pthread_t thread_1;
     pthread_t thread_2;
     pthread_create(&thread_1, NULL, llenarLista, lst);
-    pthread_create(&thread_2, NULL, llenarLista, lst);
+    //pthread_create(&thread_2, NULL, llenarLista, lst);
 
     int ret;
     pthread_join(&thread_1, (void *)&ret);
